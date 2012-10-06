@@ -26,5 +26,30 @@
 	 <artifactId>wicket-core</artifactId>
 	 <version>${wicketVersion}</version>
 	</dependency>
+	<dependency>
+	 <groupId>org.apache.wicket</groupId>
+	 <artifactId>wicket-jmx</artifactId>
+	 <version>${wicketVersion}</version>
+	</dependency>
+	<dependency>
+	 <groupId>org.apache.wicket</groupId>
+	 <artifactId>wicket-auth-roles</artifactId>
+	 <version>${wicketVersion}</version>
+	</dependency>
+	<dependency>
+	 <groupId>org.apache.wicket</groupId>
+	 <artifactId>wicket-extensions</artifactId>
+	 <version>${wicketVersion}</version>
+	</dependency>
+	<dependency>
+	 <groupId>org.apache.wicket</groupId>
+	 <artifactId>wicket-util</artifactId>
+	 <version>${wicketVersion}</version>
+	</dependency>
+	<dependency>
+	 <groupId>org.apache.wicket</groupId>
+	 <artifactId>wicket-request</artifactId>
+	 <version>${wicketVersion}</version>
+	</dependency>
   </dependencies>
 </project>
