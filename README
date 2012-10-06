@@ -12,3 +12,6 @@ Ein Wicket Quickstart Projekt um einen schnellen Einstieg in wicket zu bekommen.
 ## Model 
 - CompoundPropertyModel
   
+  
+  ## Unit Test
+  - https://cwiki.apache.org/WICKET/newuserguide.html#Newuserguide-UnitTest
