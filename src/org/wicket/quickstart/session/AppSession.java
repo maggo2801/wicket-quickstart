@@ -29,9 +29,7 @@ public class AppSession extends AuthenticatedWebSession {
 	@Override
 	public Roles getRoles() {
 		if (isSignedIn()) {
-			final Roles roles = new Roles();
-			roles.addAll(get().getMetaData(SESSION_USER_KEY).getRoles());
-			return roles;
+			return new Roles((String[]) getMetaData(SESSION_USER_KEY).getRoles().toArray());
 		}
 		return null;
 	}
@@ -41,10 +39,9 @@ public class AppSession extends AuthenticatedWebSession {
 		if ("admin".equals(username) && "admin".equals(password)) {
 			final SessionUser user = new SessionUser();
 			user.setUserId(1);
-			final ArrayList<String> roles = new ArrayList<String>(1);
-			roles.add("ADMIN");
-			user.setRoles(roles);
-			get().setMetaData(SESSION_USER_KEY, user);
+			user.setRoles(new ArrayList<String>(1));
+			user.getRoles().add("ADMIN");
+			setMetaData(SESSION_USER_KEY, user);
 			return true;
 		}
 		return false;
