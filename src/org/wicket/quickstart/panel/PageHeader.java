@@ -2,7 +2,7 @@ package org.wicket.quickstart.panel;
 
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.panel.Panel;
-import org.wicket.quickstart.session.QuickStartAuthenticatedWebSession;
+import org.wicket.quickstart.session.AppSession;
 
 public class PageHeader extends Panel {
 
@@ -13,7 +13,7 @@ public class PageHeader extends Panel {
 		add(new Link<Object>("logoutLink") {
 			@Override
 			public void onClick() {
-				QuickStartAuthenticatedWebSession.get().invalidateNow();
+				AppSession.get().invalidateNow();
 			}
 		});
 	}

@@ -7,7 +7,7 @@ import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.wicket.quickstart.page.IndexPage;
 import org.wicket.quickstart.page.ParameterPage;
 import org.wicket.quickstart.page.auth.LoginPage;
-import org.wicket.quickstart.session.QuickStartAuthenticatedWebSession;
+import org.wicket.quickstart.session.AppSession;
 
 public class App extends AuthenticatedWebApplication {
 
@@ -26,7 +26,7 @@ public class App extends AuthenticatedWebApplication {
 
 	@Override
 	protected Class<? extends AbstractAuthenticatedWebSession> getWebSessionClass() {
-		return QuickStartAuthenticatedWebSession.class;
+		return AppSession.class;
 	}
 
 	@Override

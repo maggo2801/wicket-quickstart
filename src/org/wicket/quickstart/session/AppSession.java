@@ -9,7 +9,7 @@ import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.request.Request;
 import org.wicket.quickstart.session.object.SessionUser;
 
-public class QuickStartAuthenticatedWebSession extends AuthenticatedWebSession {
+public class AppSession extends AuthenticatedWebSession {
 
 	private static final long serialVersionUID = -7272394264324378565L;
 
@@ -18,11 +18,11 @@ public class QuickStartAuthenticatedWebSession extends AuthenticatedWebSession {
 		private static final long serialVersionUID = 226757619970591381L;
 	};
 
-	public static QuickStartAuthenticatedWebSession get() {
-		return (QuickStartAuthenticatedWebSession) Session.get();
+	public static AppSession get() {
+		return (AppSession) Session.get();
 	}
 
-	public QuickStartAuthenticatedWebSession(final Request request) {
+	public AppSession(final Request request) {
 		super(request);
 	}
 
