@@ -1,6 +1,7 @@
 package org.wicket.quickstart;
 
 import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.wicket.quickstart.page.IndexPage;
 
 public class App extends WebApplication {
@@ -8,6 +9,12 @@ public class App extends WebApplication {
 	@Override
 	public Class<IndexPage> getHomePage() {
 		return IndexPage.class;
+	}
+
+	@Override
+	protected void init() {
+		super.init();
+		getComponentInstantiationListeners().add(new SpringComponentInjector(this));
 	}
 
 }
