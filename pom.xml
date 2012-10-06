@@ -17,11 +17,14 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+   <wicketVersion>6.0.0</wicketVersion>
+  </properties>
   <dependencies>
    <dependency>
 	 <groupId>org.apache.wicket</groupId>
 	 <artifactId>wicket-core</artifactId>
-	 <version>6.0.0</version>
+	 <version>${wicketVersion}</version>
 	</dependency>
   </dependencies>
 </project>
