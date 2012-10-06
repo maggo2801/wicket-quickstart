@@ -7,3 +7,8 @@ Ein Wicket Quickstart Projekt um einen schnellen Einstieg in wicket zu bekommen.
 - org.apache.wicket:wicket-jmx // JMX Unterstüzung
 
 
+# Nützliche Klassen
+
+## Model 
+- CompoundPropertyModel
+  
