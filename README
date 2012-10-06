@@ -1,0 +1,9 @@
+Ein Wicket Quickstart Projekt um einen schnellen Einstieg in wicket zu bekommen.
+
+# weitere Maven dependecies
+- org.apache.wicket:wicket-auth-roles // Wicket anwedung mit Rechteverwaltung
+- org.apache.wicket:wicket-cdi // CDI Unterstüzung
+- org.apache.wicket:wicket-extensions // Erweiterungen für wicket
+- org.apache.wicket:wicket-jmx // JMX Unterstüzung
+
+
